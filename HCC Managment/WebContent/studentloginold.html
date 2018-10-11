@@ -1,0 +1,224 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html class="supernova"><head>
+<title>studentlogin</title>
+<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.2258" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.2258" />
+<link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.2258" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?"/>
+<style type="text/css">
+    .form-label-left{
+        width:150px;
+    }
+    .form-line{
+        padding-top:12px;
+        padding-bottom:12px;
+    }
+    .form-label-right{
+        width:150px;
+    }
+    body, html{
+        margin:0;
+        padding:0;
+        background:#fff;
+    }
+
+    .form-all{
+        margin:0px auto;
+        padding-top:0px;
+        width:690px;
+        color:#555 !important;
+        font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+        font-size:14px;
+    }
+</style>
+<script type="text/javascript">
+function checkpassword()
+{
+	var pass1=document.getElementById('pass1');
+	var pass2=document.getElementById('pass2');
+	/*alert('working');*/
+	if(pass1.value==pass2.value){
+		alert('Password match');
+		pass2.style.backgroundColor="green";
+   }
+	else{
+		pass2.style.backgroundColor="red";
+	}
+}
+</script>
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+.form-label.form-label-auto {
+        
+        display: inline-block;
+        float: left;
+        text-align: right;
+      
+      } /*__INSPECT_SEPERATOR__*/
+    /* Injected CSS Code */
+</style>
+
+<script src="https://cdn.jotfor.ms/js/vendor/jquery-1.8.0.min.js?v=3.3.2258" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/maskedinput.min.js?v=3.3.2258" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.2258" type="text/javascript"></script>
+<script type="text/javascript">
+   JotForm.init(function(){
+      setTimeout(function() {
+          $('input_8').hint('ex: 23');
+       }, 20);
+      JotForm.setPhoneMaskingValidator( 'input_11_full', '### ###-####' );
+      JotForm.alterTexts({"alphabetic":"This field can only contain letters","alphanumeric":"This field can only contain letters and numbers.","ccDonationMinLimitError":"Minimum amount is {minAmount} {currency}","ccInvalidCVC":"CVC number is invalid.","ccInvalidExpireDate":"Expire date is invalid.","ccInvalidNumber":"Credit Card Number is invalid.","ccMissingDetails":"Please fill up the Credit Card details.","ccMissingDonation":"Please enter numeric values for donation amount.","ccMissingProduct":"Please select at least one product.","characterLimitError":"Too many Characters.  The limit is","characterMinLimitError":"Too few characters. The minimum is","confirmClearForm":"Are you sure you want to clear the form?","confirmEmail":"E-mail does not match","currency":"This field can only contain currency values.","cyrillic":"This field can only contain cyrillic characters","dateInvalid":"This date is not valid. The date format is {format}","dateInvalidSeparate":"This date is not valid. Enter a valid {element}.","dateLimited":"This date is unavailable.","disallowDecimals":"Please enter a whole number.","email":"Enter a valid e-mail address","fillMask":"Field value must fill mask.","freeEmailError":"Free email accounts are not allowed","generalError":"There are errors on the form. Please fix them before continuing.","generalPageError":"There are errors on this page. Please fix them before continuing.","gradingScoreError":"Score total should only be less than or equal to","incompleteFields":"There are incomplete required fields. Please complete them.","inputCarretErrorA":"Input should not be less than the minimum value:","inputCarretErrorB":"Input should not be greater than the maximum value:","lessThan":"Your score should be less than or equal to","maxDigitsError":"The maximum digits allowed is","maxSelectionsError":"The maximum number of selections allowed is","minSelectionsError":"The minimum required number of selections is","multipleFileUploads_emptyError":"{file} is empty, please select files again without it.","multipleFileUploads_fileLimitError":"Only {fileLimit} file uploads allowed.","multipleFileUploads_minSizeError":"{file} is too small, minimum file size is {minSizeLimit}.","multipleFileUploads_onLeave":"The files are being uploaded, if you leave now the upload will be cancelled.","multipleFileUploads_sizeError":"{file} is too large, maximum file size is {sizeLimit}.","multipleFileUploads_typeError":"{file} has invalid extension. Only {extensions} are allowed.","nextButtonText":"Next","numeric":"This field can only contain numeric values","pastDatesDisallowed":"Date must not be in the past.","pleaseWait":"Please wait...","prevButtonText":"Previous","progressMiddleText":"of","required":"This field is required.","requireEveryCell":"Every cell is required.","requireEveryRow":"Every row is required.","requireOne":"At least one field required.","seeAllText":"See All","submissionLimit":"Sorry! Only one entry is allowed.  Multiple submissions are disabled for this form.","submitButtonText":"Submit","uploadExtensions":"You can only upload following files:","uploadFilesize":"File size cannot be bigger than:","uploadFilesizemin":"File size cannot be smaller than:","url":"This field can only contain a valid URL","wordLimitError":"Too many words. The limit is","wordMinLimitError":"Too few words.  The minimum is"});
+	JotForm.clearFieldOnHide="disable";
+	JotForm.submitError="jumpToFirstError";
+    /*INIT-END*/
+});
+
+   JotForm.prepareCalculationsOnTheFly([null,{"name":"studentLogin","qid":"1","text":"Student login","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},null,{"name":"typeA","qid":"4","text":"First name","type":"control_textbox"},{"name":"lastName","qid":"5","text":"Last name","type":"control_textbox"},{"name":"registraitonNo","qid":"6","text":"Registraiton no","type":"control_textbox"},null,{"name":"age","qid":"8","text":"Age","type":"control_number"},{"name":"gender","qid":"9","text":"Gender","type":"control_dropdown"},{"name":"hostelBlock","qid":"10","text":"Hostel Block","type":"control_dropdown"},{"name":"phoneNumber11","qid":"11","text":"Phone number","type":"control_phone"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"studentLogin","qid":"1","text":"Student login","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},null,{"name":"typeA","qid":"4","text":"First name","type":"control_textbox"},{"name":"lastName","qid":"5","text":"Last name","type":"control_textbox"},{"name":"registraitonNo","qid":"6","text":"Registraiton no","type":"control_textbox"},null,{"name":"age","qid":"8","text":"Age","type":"control_number"},{"name":"gender","qid":"9","text":"Gender","type":"control_dropdown"},{"name":"hostelBlock","qid":"10","text":"Hostel Block","type":"control_dropdown"},{"name":"phoneNumber11","qid":"11","text":"Phone number","type":"control_phone"}]);}, 20); 
+</script>
+</head>
+<body>
+<form class="jotform-form" action="Check" method="post" name="form_72941890572465" id="72941890572465" accept-charset="utf-8">
+  <!--input type="hidden" name="formID" value="72941890572465" /-->
+  <div class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group ">
+          <div class="header-text httac htvam">
+            <h1 id="header_1" class="form-header" data-component="header">
+              Student Registration
+            </h1>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_6">
+        <label class="form-label form-label-right form-label-auto" id="label_6" for="input_6">
+          Registration no
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_6" class="form-input jf-required">
+          <input type="text" id="input_6" name="regno" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="" data-component="textbox" required="" />
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_6">
+        <label class="form-label form-label-right form-label-auto" id="label_6" for="input_6">
+          Create password
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_6" class="form-input jf-required">
+          <input type="password" id="pass1" name="pass" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="" data-component="textbox" required="" />
+        </div>
+		</li>
+		<li class="form-line jf-required" data-type="control_textbox" id="id_6">
+        <label class="form-label form-label-right form-label-auto" id="label_6" for="input_6">
+         Re-Password
+          <span style="color:red">
+		  *
+          </span>
+        </label>
+        <div id="cid_6" class="form-input jf-required">
+          <input type="Password" id="pass2" name="q6_registraitonNo" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="" data-component="textbox" required="" onkeyup="checkpassword();return false;"/>
+        </div>
+		</li>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_4">
+        <label class="form-label form-label-right form-label-auto" id="label_4" for="input_4">
+          First name
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_4" class="form-input jf-required">
+          <input type="text" id="input_4" name="fname" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="" data-component="textbox" required="" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_5">
+        <label class="form-label form-label-right form-label-auto" id="label_5" for="input_5"> Last name </label>
+        <div id="cid_5" class="form-input">
+          <input type="text" id="input_5" name="lname" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" />
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_number" id="id_8">
+        <label class="form-label form-label-right form-label-auto" id="label_8" for="input_8">
+          Age
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_8" class="form-input jf-required">
+          <input type="number" id="input_8" name="age" data-type="input-number" class=" form-number-input form-textbox validate[required]" style="width:60px;" size="5" value="" placeholder="ex: 23" data-component="number" required="" />
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_9">
+        <label class="form-label form-label-right" id="label_9" for="input_9">
+          Gender
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_9" class="form-input jf-required">
+          <select class="form-dropdown validate[required]" id="input_9" name="gen" style="width:150px;" data-component="dropdown" required="">
+            <option value="">  </option>
+            <option selected="" value="Male"> Male </option>
+            <option value="Female"> Female </option>
+            <option value="Other"> Other </option>
+          </select>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_10">
+        <label class="form-label form-label-right form-label-auto" id="label_10" for="input_10">
+          Hostel Block
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_10" class="form-input jf-required">
+          <select class="form-dropdown validate[required]" id="input_10" name="block" style="width:150px;" data-component="dropdown" required="">
+            <option value="">  </option>
+            <option value=""> select </option>
+            <option value="Mega tower 1"> Mega tower 1 </option>
+            <option value="Mega tower 2"> Mega tower 2 </option>
+            <option value="mega tower 3"> mega tower 3 </option>
+            <option value="Eighth block"> Eighth block </option>
+            <option value="Girls hostel"> Girls hostel </option>
+            <option value="">  </option>
+          </select>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_phone" id="id_11">
+        <label class="form-label form-label-right form-label-auto" id="label_11" for="input_11_full">
+          Phone number
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_11" class="form-input jf-required">
+          <span class="form-sub-label-container" style="vertical-align:top;">
+            <input type="tel" id="input_11_full" name="phno" data-type="mask-number" class="mask-phone-number form-textbox validate[required, Fill Mask]" autocomplete="off" data-masked="true" value="" data-component="phone" required="" />
+            <label class="form-sub-label" for="input_11_masked" id="sublabel_masked" style="min-height:13px;">  </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_2">
+        <div id="cid_2" class="form-input-wide">
+          <div style="margin-left:156px;" class="form-buttons-wrapper">
+            <button id="input_2" type="submit" class="form-submit-button" data-component="button">
+              Submit
+            </button>
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+</form></body>
+</html>
+<script type="text/javascript">JotForm.ownerView=true;</script>
