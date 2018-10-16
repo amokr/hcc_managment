@@ -22,6 +22,7 @@ public class Check extends HttpServlet {
     }
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("Hllo");
+		System.out.println("hello");
 		PrintWriter out=response.getWriter();
 		out.println("hello");
 		/*pw.print("<scipt>alert('hello')<script/>");
